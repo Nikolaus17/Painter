@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Painter</title>
+    <link rel="stylesheet" href="spectrum.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col l6">
+          <div class="canvas">
+            <canvas height="500" width="500" id="area_de_dibujo"></canvas>
+          </div>
+          <div class="title">
+            <h3>That's how you drawing looks</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l6 offset-s7">
+          <div class="middle" >
+            <a class="btn" href="#">
+              <i class="fas fa-eraser" id="eraserButton"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fas fa-trash-alt" id="eraseAllButton"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fas fa-pencil-alt" id="pencilButton"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="comments">
+        <strong>Choose the line width </strong><i class="range" href="#"><input value="7" autocomplete="off" type="range" id="rango" min="0" max="20" step="0.5" /></i>
+      <p>
+        <div>
+          <strong>Choose the line color </strong>
+        </div>
+      </p>
+      </div>
+      <div id="color">
+        <input type="text" class="colores" />
+        <script type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+        <script src="spectrum.js"></script>
+      </div>
+    </div>
+    <script src="evento.js"></script>
+  </body>
+</html>
